@@ -1,0 +1,82 @@
+ *{
+	 margin: 0;
+	 padding: 0;
+ }
+
+ body{
+	 background-image: url('images/bg.jpg');
+	 background-size: cover;
+	 overflow: hidden;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+ }
+
+ .astro-1, .astro-2{
+	position: absolute	;
+ }
+
+ .astro-1{
+	 animation-name:astro1 ;
+	 animation-duration: 30s;
+	 animation-iteration-count: infinite;
+	 animation-timing-function: linear;
+ }
+
+.astro-2{
+	left: 52%;
+    top: 60%;
+	animation-name: astro2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+}
+
+
+ @keyframes astro1{
+	 0%{
+		 left:0 ;
+		 top: 0;
+	 }
+
+	 20%{
+		 left: 20%;
+		 top: 10%;
+	 }
+
+	 40%{
+		left: 40%;
+		top: 0;
+	 }
+
+	 60%{
+		left:60%;
+		top: 20%;
+	 }
+
+	 80%{
+		 left: 80%;
+		 top: 0;
+	 }
+
+	 100%{
+		 left: 100%;
+		 top: 30%;
+	 }
+ }
+
+
+
+ @keyframes astro2{
+	 0%{
+		top: 60%;
+	 }
+
+	 50%{
+		top:45% ;
+	 }
+
+	 100%{
+		top: 60%;
+	 }
+ }
